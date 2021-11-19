@@ -4,6 +4,7 @@ $highlight-color: #955bfb;
   display: inline-block;
   max-width: 270px;
   height: 100vh;
+  border-right: 1px solid #955bfb;
 }
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
@@ -21,8 +22,44 @@ $highlight-color: #955bfb;
   width: 14px;
 }
 
-body {
-  background-color: white;
+button {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 20px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.button-light {
+  filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(156deg) brightness(112%) contrast(101%);
+}
+
+.button-dark:hover, .button-light:hover {
+  filter: invert(36%) sepia(47%) saturate(1835%) hue-rotate(235deg) brightness(104%) contrast(97%);
+}
+
+:root {
+  --bg-color: #ddd;
+  --text-color: #181818;
+  transition: all 1s;
+}
+
+[data-theme="Dark"] {
+  --bg-color: #181818;
+  --text-color: #ddd;
+  transition: all 1s;
+
+}
+
+[data-theme="Light"] {
+  --bg-color: #ddd;
+  --text-color: #181818;
+  transition: all 1s;
+}
+
+.App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 main {
@@ -33,7 +70,6 @@ main {
   position: absolute;
   padding-top: 150px;
   margin-left: 80px;
-  color: black;
 }
 
 .div-avatar {
