@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context/Context';
-import sol from '../Images/sol.svg'
-import lua from '../Images/lua.svg'
+import sol from '../Svg/sol.svg'
+import lua from '../Svg/lua.svg'
 
 export default function ToggleDarkMode() {
  const { darkMode, setDarkMode, dataTheme } = useContext(Context);

@@ -4,12 +4,12 @@ import Skills from '../Components/Skills';
 import Portfolio from '../Components/Portfolio';
 import Interests from '../Components/Interests';
 import Contact from '../Components/Contact';
-import casa from '../Images/casa.svg';
-import informacoes from '../Images/informacoes.svg';
-import lampada from '../Images/lampada.svg';
-import pasta from '../Images/pasta.svg';
-import dardo from '../Images/dardo.svg';
-import agenda from '../Images/agenda.svg';
+import casa from '../Svg/casa.svg';
+import informacoes from '../Svg/informacoes.svg';
+import lampada from '../Svg/lampada.svg';
+import pasta from '../Svg/pasta.svg';
+import dardo from '../Svg/dardo.svg';
+import agenda from '../Svg/agenda.svg';
 
 export const routes = [
   {

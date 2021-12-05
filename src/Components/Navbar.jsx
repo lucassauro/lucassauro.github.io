@@ -10,8 +10,8 @@ import {
   SidebarHeader,
 } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
-import coracao from '../Images/coracao-dark.svg';
-import brain from '../Images/brain-svgrepo-com.svg';
+import coracao from '../Svg/coracao-dark.svg';
+import brain from '../Svg/brain-svgrepo-com.svg';
 
 const Navbar = () => {
 

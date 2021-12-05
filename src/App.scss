@@ -12,11 +12,13 @@ $highlight-color: #955bfb;
 
 .avatar {
   margin: 10px auto;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
+
 
 .brain {
   width: 14px;
@@ -28,6 +30,7 @@ button {
   margin-top: 20px;
   border: none;
   background-color: rgba(255, 0, 0, 0);
+  z-index: 1;
 }
 
 .button-light {
@@ -63,17 +66,23 @@ button {
 }
 
 main {
+  // border: 1px solid #955bfb;
   font-family: monospace;
   font-size: 20px;
   display: inline-block;
   flex-direction: column;
   position: absolute;
-  padding-top: 150px;
+  margin-top: 110px;
   margin-left: 80px;
+  margin-right: 80px;
 }
 
 .div-avatar {
   text-align: center;
+}
+
+.div-avatar > a {
+  display: block;
 }
 
 .heart {
@@ -95,3 +104,6 @@ h1 {
   display: inline-block;
 }
 
+.contact-buttons {
+  border-radius: 5px;
+}
