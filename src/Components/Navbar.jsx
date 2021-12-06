@@ -12,20 +12,15 @@ import {
 import 'react-pro-sidebar/dist/css/styles.css';
 import coracao from '../Svg/coracao-dark.svg';
 import brain from '../Svg/brain-svgrepo-com.svg';
+import Image from '../Components/Image';
 
 const Navbar = () => {
-
   return (
     <div className="nav">
       <ProSidebar>
         <SidebarHeader>
           <div className="div-avatar">
-            <img
-              className="avatar"
-              src="https://mapadelondres.org/wp-content/uploads/2018/10/guy-fawkes.jpg"
-              alt="Guy Fawkes mask with dark background."
-              width="200"
-            />
+            <Image />
           </div>
         </SidebarHeader>
         <SidebarContent>

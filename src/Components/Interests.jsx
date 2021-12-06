@@ -8,7 +8,7 @@ const Interests = () => {
       <ul>
         <li>Back-end development</li>
         <li>CyberSecurity</li>  
-        <li>Web 3.0</li>  
+        <li>Blockchain</li>  
       </ul>
       <br />
       <h1>Hobbies</h1>
