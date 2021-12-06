@@ -1,14 +1,15 @@
 import { createContext, useState } from 'react';
+import useLocalStorage from '../Helpers/useLocalStorage';
 
 export const Context = createContext()
 
 export default function Provider({children}) {
-  const [ darkMode, setDarkMode ] = useState(false);
+  const [ dM, setDM ] = useLocalStorage("darkMode", false);
   const [ dataTheme, setDataTheme ] = useState('');
 
   const value = {
-    darkMode,
-    setDarkMode,
+    dM,
+    setDM,
     dataTheme,
     setDataTheme,
   }

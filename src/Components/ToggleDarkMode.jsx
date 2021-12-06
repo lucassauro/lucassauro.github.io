@@ -1,30 +1,32 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context/Context';
-import sol from '../Svg/sol.svg'
-import lua from '../Svg/lua.svg'
+import Sun from '../Svg/sol.svg'
+import Moon from '../Svg/lua.svg'
 
 export default function ToggleDarkMode() {
- const { darkMode, setDarkMode, dataTheme } = useContext(Context);
+ const { dM, setDM, dataTheme } = useContext(Context);
 
   return (
     <label className="switch">
       <button
         type="button"
-        onClick={ () => setDarkMode(!darkMode) }
+        onClick={ () => setDM(!dM) }
         data-theme={ dataTheme }
         >
-        { darkMode
+        { dM
           ? (<img
-            src={sol}
+            src={ Sun }
             alt="Sun icon to activate Light Mode"
-            width={20}
+            width={ 20 }
             className="button-light"
+            title="Toggle LightMode persistent"
           />)
           : (<img
-              src={lua}
+              src={ Moon }
               alt="Moon icon to activate Dark Mode"
-              width={20}
+              width={ 20 }
               className="button-dark"
+              title="Toggle DarkMode persistent"
           />)}
       </button>
     </label>

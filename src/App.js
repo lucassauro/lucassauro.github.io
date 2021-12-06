@@ -13,11 +13,11 @@ import { Context } from './Context/Context';
 import './App.scss';
 
 function App() {
-  const { darkMode, dataTheme, setDataTheme } = useContext(Context);
+  const { dM, dataTheme, setDataTheme } = useContext(Context);
 
   useEffect(() => {
-    darkMode ? setDataTheme('Dark') : setDataTheme('Light');
-  }, [darkMode])
+    dM ? setDataTheme('Dark') : setDataTheme('Light');
+  }, [dM])
 
   return (
     <Router>
